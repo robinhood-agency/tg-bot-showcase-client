@@ -7,6 +7,7 @@
     "plugin:@typescript-eslint/recommended" // Рекомендованные правила для TypeScript
   ],
   "rules": {
+    "ignorePatterns": ["dist"],
     "react/react-in-jsx-scope": "off", // Отключение правила
     "@typescript-eslint/ban-ts-comment": "off", // Отключает запрет на использование комментариев типа @ts-<directive>
     "array-bracket-spacing": ["error", "never"], // Ошибка, если есть пробелы внутри квадратных скобок массива
