@@ -6,8 +6,8 @@
     "plugin:react-hooks/recommended", // Рекомендованные правила для хуков React
     "plugin:@typescript-eslint/recommended" // Рекомендованные правила для TypeScript
   ],
+  "ignorePatterns": ["dist", "build"],
   "rules": {
-    "ignorePatterns": ["dist"],
     "react/react-in-jsx-scope": "off", // Отключение правила
     "@typescript-eslint/ban-ts-comment": "off", // Отключает запрет на использование комментариев типа @ts-<directive>
     "array-bracket-spacing": ["error", "never"], // Ошибка, если есть пробелы внутри квадратных скобок массива
