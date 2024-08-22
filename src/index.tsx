@@ -8,4 +8,5 @@ const container = document.getElementById('root');
 
 const root = createRoot(container as Element);
 
+// @ts-ignore
 root.render(<App />);
