@@ -9,7 +9,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: '@use "src/stylesheets/variables/mediaBreakpoints.scss" as *;',
+        additionalData: '@import "./src/stylesheets/variables/mediaBreakpoints.scss" as *;',
       },
     },
   },
