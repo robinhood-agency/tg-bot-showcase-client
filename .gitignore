@@ -26,7 +26,6 @@ dist-ssr/
 .env
 
 .vscode
-.idea
 node_modules
 .module-cache
 *.log*
