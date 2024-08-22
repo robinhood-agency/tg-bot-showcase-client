@@ -1,0 +1,44 @@
+{
+  "plugins": ["@typescript-eslint"], // Плагин для поддержки TypeScript в ESLint
+  "extends": [
+    "eslint:recommended", // Основные рекомендованные правила ESLint
+    "plugin:react/recommended", // Рекомендованные правила для React
+    "plugin:react-hooks/recommended", // Рекомендованные правила для хуков React
+    "plugin:@typescript-eslint/recommended" // Рекомендованные правила для TypeScript
+  ],
+  "ignorePatterns": ["dist", "build"],
+  "rules": {
+    "react/react-in-jsx-scope": "off", // Отключение правила
+    "@typescript-eslint/ban-ts-comment": "off", // Отключает запрет на использование комментариев типа @ts-<directive>
+    "array-bracket-spacing": ["error", "never"], // Ошибка, если есть пробелы внутри квадратных скобок массива
+    "arrow-body-style": ["error", "as-needed"], // Ошибка, если тело стрелочной функции не является необходимым (может быть сокращено)
+    "comma-dangle": ["error", "always-multiline"], // Ошибка, если в многострочных конструкциях отсутствует завершающая запятая
+    "curly": ["error", "all"], // Ошибка, если блоки не обёрнуты в фигурные скобки
+    "eqeqeq": ["error", "always"], // Ошибка, если используются нестрогие операторы равенства (== и != вместо === и !==)
+    "eol-last": ["error", "always"], // Ошибка, если в конце файла нет пустой строки
+    "keyword-spacing": "warn", // Предупреждение, если нарушены пробелы вокруг ключевых слов
+    "linebreak-style": ["warn", "unix"], // Предупреждение, если стиль переноса строк не Unix (LF)
+    "object-curly-spacing": ["warn", "always"], // Предупреждение, если отсутствуют пробелы внутри фигурных скобок объекта
+    "quotes": ["warn", "single"], // Предупреждение, если кавычки не одинарные
+    "no-console": "warn", // Предупреждение при использовании console.log и других методов консоли
+    "no-else-return": "error", // Ошибка, если после return в блоке if-else есть else
+    "no-empty": "warn", // Предупреждение при наличии пустых блоков
+    "no-extra-semi": "error", // Ошибка при наличии лишних точек с запятой
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 1 // Предупреждение, если есть более одной пустой строки подряд
+      }
+    ],
+    "no-multi-spaces": ["warn"], // Предупреждение при наличии нескольких пробелов подряд
+    "no-trailing-spaces": "warn", // Предупреждение при наличии пробелов в конце строк
+    "no-use-before-define": "error", // Ошибка при использовании переменных до их объявления
+    "react/self-closing-comp": ["error", { "component": true, "html": true }], // Ошибка, если компоненты и HTML-теги без детей не самозакрывающиеся
+    "semi": ["error", "always"] // Ошибка, если отсутствует точка с запятой в конце выражений
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
