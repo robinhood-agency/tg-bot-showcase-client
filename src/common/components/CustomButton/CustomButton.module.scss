@@ -1,0 +1,48 @@
+.customButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 2.5rem;
+  border: none;
+  color: var(--color-secondary-black);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-sm);
+  border-radius: 0.32rem;
+  transition: all 0.15s ease;
+  font-family: 'Poppins', sans-serif;
+
+  &_primary {
+    background-color: var(--color-primary-black);
+    color: var(--color-secondary-green);
+  }
+  &_primary:hover {
+    box-shadow: 0 0 4px var(--color-primary-black);
+  }
+
+  &_secondary {
+    background-color: var(--color-primary-white);
+    color: var(--color-secondary-black);
+  }
+  &_secondary:hover {
+    box-shadow: 0 0 4px var(--color-primary-white);
+  }
+
+  &_third {
+    background-color: var(--color-primary-green);
+    color: var(--color-secondary-black);
+  }
+  &_third:hover {
+    box-shadow: 0 0 4px var(--color-primary-green);
+  }
+}
+
+.customButton:hover {
+  cursor: pointer;
+  opacity: 0.95;
+}
+
+.customButton:active {
+  transform: translateY(1px);
+  opacity: 0.90;
+}
