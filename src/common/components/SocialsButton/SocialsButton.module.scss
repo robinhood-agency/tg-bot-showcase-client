@@ -1,0 +1,43 @@
+.socialsButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
+  width: 10.5rem;
+  height: 3rem;
+  background-color: var(--color-primary-white);
+  color: var(--color-primary-grey);
+  font-family: 'Poppins', sans-serif;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-sm);
+  border: solid 0.125rem var(--color-primary-grey);
+  border-radius: 7px;
+  transition: all ease 0.25s;
+
+  &__icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  &__subscribers {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary-black);
+  }
+}
+
+.socialsButton:hover {
+  cursor: pointer;
+  border: solid 0.125rem var(--color-secondary-black);
+}
+
+.socialsButton:active {
+  transform: translateY(1px);
+}
+
+.subscribersContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
