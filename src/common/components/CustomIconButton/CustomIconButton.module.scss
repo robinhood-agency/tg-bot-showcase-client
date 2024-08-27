@@ -1,0 +1,19 @@
+.container {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-primary-green);
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+  &:hover {
+    transform: scale(1.2);
+    background-color: var(--color-secondary-green);
+  }
+}
