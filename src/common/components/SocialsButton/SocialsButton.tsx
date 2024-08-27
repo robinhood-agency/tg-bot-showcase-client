@@ -18,7 +18,7 @@ export const SocialsButton = (props: ISocialsButtonProps) => {
       className={styles.socialsButton}
       {...restProps}
     >
-      <div className={ `${styles.socialsButton__icon} ${styles[`socialsButton__icon__${buttonIconType}`]}` }>
+      <div className={ `${styles.socialsButton__icon} ${styles[`socialsButton__icon_${buttonIconType}`]}` }>
         { icon }
       </div>
       <div className={ styles.socialsButton__subscribersContainer }>

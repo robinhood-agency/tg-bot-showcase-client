@@ -23,17 +23,17 @@
     color: var(--color-primary-white);
     transition: all 0.3s ease;
 
-    &__youtube {
+    &_youtube {
       background-color: #ff0000;
     }
 
-    &__telegram {
+    &_telegram {
       background-color: #00b2ff;
       padding-top: 3px;
       padding-left: 1px;
     }
 
-    &__twitter {
+    &_twitter {
       background-color: var(--color-primary-black);
     }
   }

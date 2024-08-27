@@ -15,7 +15,8 @@
     background-color: var(--color-primary-black);
     color: var(--color-secondary-green);
     &:hover {
-      box-shadow: 0 0 3px var(--color-primary-black);
+      transform: scale(1.1);
+      box-shadow: 0 0 1px var(--color-primary-black);
       opacity: 0.85;
     }
   }
@@ -24,7 +25,8 @@
     background-color: var(--color-primary-white);
     color: var(--color-secondary-black);
     &:hover {
-      box-shadow: 0 0 4px var(--color-primary-black);
+      transform: scale(1.1);
+      box-shadow: 0 0 1px var(--color-primary-white);
     }
   }
 
@@ -32,8 +34,9 @@
     background-color: var(--color-primary-green);
     color: var(--color-secondary-black);
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
       background-color: var(--color-secondary-green);
+      box-shadow: 0 0 1px var(--color-secondary-green);
     }
   }
 
