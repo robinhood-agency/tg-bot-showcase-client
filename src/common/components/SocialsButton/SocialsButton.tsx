@@ -1,35 +1,29 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react';
+
+import { convertToK } from '@common/utils/ConvertToK';
+
 import styles from './SocialsButton.module.scss';
-import youtube from './Icons/youtube-logo.png';
-import telegram from './Icons/telegram-logo.png';
-import x from './Icons/x-logo.png';
 
 interface ISocialsButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  buttonIcon?: string,
-  children: ReactNode
+  buttonIconType?: string,
+  children: ReactNode,
+  icon: ReactNode
 }
 
 export const SocialsButton = (props: ISocialsButtonProps) => {
-  const { children, buttonIcon, ...restProps } = props;
-  const determineIcon = () => buttonIcon === 'yt' ? youtube : buttonIcon === 'telegram' ? telegram : x;
-
-  const convertToK = (subscribers: ReactNode) => {
-    if (typeof subscribers === 'number') {
-      return Math.round(subscribers / 1000).toString() + 'k';
-    }
-
-    return '...';
-  };
+  const { icon, children, buttonIconType, ...restProps } = props;
 
   return (
     <button
       className={styles.socialsButton}
       {...restProps}
     >
-      <img className={ styles.socialsButton__icon } src={ determineIcon() } alt='socialsButtonIcon' />
-      <div className={ styles.subscribersContainer }>
-        <span className={ styles.socialsButton__subscribers }>{ convertToK(children) }</span>
-        <span>Subscribers</span>
+      <div className={ `${styles.socialsButton__icon} ${styles[`socialsButton__icon__${buttonIconType}`]}` }>
+        { icon }
+      </div>
+      <div className={ styles.socialsButton__subscribersContainer }>
+        <span className={ styles.socialsButton__subscribersContainer__subscribers }>{ convertToK(children) }</span>
+        Subscribers
       </div>
     </button>
   );

@@ -1,5 +1,6 @@
-import styles from './CustomButton.module.scss';
 import { ButtonHTMLAttributes, ReactNode } from 'react';
+
+import styles from './CustomButton.module.scss';
 
 interface ICustomButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   buttonType?: 'primary' | 'secondary' | 'third',
