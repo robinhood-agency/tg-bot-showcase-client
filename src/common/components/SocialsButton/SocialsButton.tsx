@@ -22,7 +22,7 @@ export const SocialsButton = (props: ISocialsButtonProps) => {
         { icon }
       </div>
       <div className={ styles.socialsButton__subscribersContainer }>
-        <span className={ styles.socialsButton__subscribersContainer__subscribers }>{ convertToK(children) }</span>
+        <span className={ styles.socialsButton__subscribers }>{ convertToK(children) }</span>
         Subscribers
       </div>
     </button>

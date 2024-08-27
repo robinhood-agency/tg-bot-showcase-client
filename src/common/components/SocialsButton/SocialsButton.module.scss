@@ -43,11 +43,11 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+  }
 
-    &__subscribers {
-      font-weight: var(--font-weight-bold);
-      color: var(--color-secondary-black);
-    }
+  &__subscribers {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary-black);
   }
 
   &:hover {
