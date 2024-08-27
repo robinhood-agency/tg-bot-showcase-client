@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 import styles from './SocialsButton.module.scss';
 import youtube from './Icons/youtube-logo.png';
-import tg from './Icons/telegram-logo.png';
+import telegram from './Icons/telegram-logo.png';
 import x from './Icons/x-logo.png';
 
 interface ISocialsButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -11,7 +11,7 @@ interface ISocialsButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const SocialsButton = (props: ISocialsButtonProps) => {
   const { children, buttonIcon, ...restProps } = props;
-  const determineIcon = () => buttonIcon === 'yt' ? youtube : buttonIcon === 'tg' ? tg : x;
+  const determineIcon = () => buttonIcon === 'yt' ? youtube : buttonIcon === 'telegram' ? telegram : x;
 
   const convertToK = (subscribers: ReactNode) => {
     if (typeof subscribers === 'number') {
