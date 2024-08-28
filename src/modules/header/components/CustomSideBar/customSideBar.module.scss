@@ -34,6 +34,23 @@
     font-size: var(--font-size-xl);
     color: var(--color-primary-white);
   }
+
+  &__bottom {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__socialNetworks {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__buttonWrapper {
+    width: 134px;
+  }
 }
 
 @media (max-width: 480px) {
