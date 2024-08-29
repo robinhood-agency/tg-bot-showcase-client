@@ -1,17 +1,18 @@
 import { CustomButton } from '@common/components/CustomButton/CustomButton';
+import { Crabs } from '../../../public/Crabs';
 
 import styles from './Landing.module.scss';
 
 export const Landing = () => (
   <div className={styles.container}>
     <p className={styles.container__catchyText}>
-      Пройди путь от криптохомячка
-      <p className={styles.container__highlitedText}>до владыки вселенной</p>
+      От криптохомячка
+      <p className={styles.container__highlitedText}>до владыки мира</p>
     </p>
     <p className={styles.container__courseInfo}>
       Курс от самого гениального крипто гения, который только мог появиться на свет, покупайте!
     </p>
-    <img className={styles.container__image} src='../../../public/MrCrabs.png' alt='mrCrabs_image' />
+    <Crabs />
     <p className={styles.container__courseDetails}>
       Старт курса: СКОРО
       <p> Продолжительность: 3 месяца </p>
