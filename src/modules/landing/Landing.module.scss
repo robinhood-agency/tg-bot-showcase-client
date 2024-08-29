@@ -5,7 +5,6 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: fit-content;
   padding: 10px 30px;
   background-color: var(--color-secondary-black);
   letter-spacing: 0.5px;
@@ -21,17 +20,13 @@
     background-color: var(--color-primary-green);
     color: var(--color-secondary-black);
     padding: 3px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: fit-content;
+    display: inline-block;
     margin-top: 8px;
     border: none;
   }
 
   &__courseInfo {
     width: 70%;
-    height: fit-content;
     color: var(--color-primary-grey);
     align-self: flex-start;
   }
