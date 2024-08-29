@@ -3,21 +3,20 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 35px;
   border: none;
   color: var(--color-secondary-black);
   font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-sm);
-  border-radius: 5px;
+  font-size: var(--font-size-md);
+  border-radius: 50px;
   transition: all 0.3s ease;
 
   &_primary {
     background-color: var(--color-primary-black);
     color: var(--color-secondary-green);
     &:hover {
+      background-color: var(--color-primary-grey);
       transform: scale(1.1);
-      box-shadow: 0 0 1px var(--color-primary-black);
-      opacity: 0.85;
+      color: var(--color-primary-white);
     }
   }
 
@@ -26,17 +25,27 @@
     color: var(--color-secondary-black);
     &:hover {
       transform: scale(1.1);
-      box-shadow: 0 0 1px var(--color-primary-white);
+      border: 1px solid var(--color-secondary-black);
     }
   }
 
   &_third {
     background-color: var(--color-primary-green);
-    color: var(--color-secondary-black);
+    color: var(--color-primary-white);
     &:hover {
       transform: scale(1.1);
       background-color: var(--color-secondary-green);
-      box-shadow: 0 0 1px var(--color-secondary-green);
+      color: var(--color-primary-black);
+    }
+  }
+
+  &_fourth {
+    background-color: var(--color-primary-grey);
+    color: var(--color-primary-white);
+    &:hover {
+      transform: scale(1.1);
+      background-color: var(--color-primary-white);
+      color: var(--color-secondary-black);
     }
   }
 
