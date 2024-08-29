@@ -3,7 +3,7 @@ import { InputHTMLAttributes } from 'react';
 import styles from './Checkbox.module.scss';
 
 interface ICheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
-  label?: string;
+  label: string;
 }
 
 export const Checkbox = ({ label, ...props }: ICheckboxProps) => (
