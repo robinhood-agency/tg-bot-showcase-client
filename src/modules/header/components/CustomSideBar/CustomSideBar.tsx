@@ -54,7 +54,14 @@ export const CustomSideBar = ({ onClose, isOpen }: ICustomSideBarProps) => (
           ))}
         </div>
         <div className={styles.customSideBar__buttonWrapper}>
-          <CustomButton buttonType='secondary'>Записаться</CustomButton>
+          <div className={styles.customSideBar__secondaryButton}>
+            <CustomButton buttonType='secondary' height={51}>
+              Записаться
+            </CustomButton>
+          </div>
+          <CustomButton buttonType='fourth' height={51}>
+            У меня есть вопрос
+          </CustomButton>
         </div>
       </div>
     </div>
