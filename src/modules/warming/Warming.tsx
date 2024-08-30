@@ -1,5 +1,6 @@
-import styles from './Warming.module.scss';
 import { Card } from '@modules/warming/Card';
+
+import styles from './Warming.module.scss';
 
 const cardsArray = [
   {
