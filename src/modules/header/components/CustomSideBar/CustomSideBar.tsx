@@ -7,9 +7,9 @@ import { YouTubeReactIcon } from '@common/icons/YouTubeReactIcon';
 import { TelegramReactIcon } from '@common/icons/TelegramReactIcon';
 import { InstagramReactIcon } from '@common/icons/InstagramReactIcon';
 import { TwitterReactIcon } from '@common/icons/TwitterReactIcon';
-
-import styles from './customSideBar.module.scss';
 import { CustomButton } from '@common/components/CustomButton/CustomButton';
+
+import styles from './CustomSideBar.module.scss';
 
 const navListArray = [{ text: 'Об авторе' }, { text: 'Программа' }, { text: 'Тарифы' }];
 const iconsArray = [
