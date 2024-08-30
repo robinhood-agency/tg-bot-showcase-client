@@ -1,6 +1,7 @@
 import styles from './Warming.module.scss';
+import { Card } from '@modules/warming/Card';
 
-const cards = [
+const cardsArray = [
   {
     title: 'Результат',
     content: 'Мы гарантируем, что каждый по завершению курса будет обладать практическими знаниями и инвестировать на ' +
@@ -31,16 +32,8 @@ export const Warming = () => (
     <p className={styles.container__headerHighlited}>
       кто хочет:
     </p>
-    { cards.map((card, index) => (
-      <div key={index} className={styles.container__card}>
-        <div className={styles.container__cardUpperText}>
-          <p className={styles.container__cardNumber}>{ (++index).toString() }</p>
-          <p>{ card.title }</p>
-        </div>
-        <p className={styles.container__cardContent}>
-          { card.content }
-        </p>
-      </div>
+    { cardsArray.map((card, index) => (
+      <Card key={index} index={index} card={card} />
     ))}
   </div>
 );
