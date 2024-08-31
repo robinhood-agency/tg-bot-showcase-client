@@ -1,9 +1,9 @@
-import { AboutAuthor } from '@modules/aboutAuthor/aboutAuthor';
+import { Landing } from '@modules/landing/landing';
 
 const App = () => (
   <div>
     <h2>Привет</h2>
-    <AboutAuthor />
+    <Landing />
   </div>
 );
 
