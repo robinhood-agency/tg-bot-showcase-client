@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 40px 60px 40px;
+  gap: 50px;
+
+  &__title {
+    color: var(--color-primary-white);
+    font-size: 35px;
+    line-height: 49px;
+    font-weight: var(--font-weight-bold);
+  }
+
+  &__numbers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 110px;
+  }
+
+  &__numbersItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+    gap: 5px;
+  }
+
+  &__itemNumber {
+    color: var(--color-primary-green);
+    font-size: 40px;
+    font-weight: var(--font-weight-bold);
+    line-height: 62px;
+  }
+
+  &__itemTitle {
+    color: var(--color-primary-white);
+    font-size: 12px;
+    line-height: 19px;
+    text-wrap: nowrap;
+  }
+}
