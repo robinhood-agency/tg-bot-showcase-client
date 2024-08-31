@@ -55,3 +55,16 @@
     border: 2px solid var(--color-primary-black);
   }
 }
+
+@media (max-width: 385px) {
+  .socialsButton__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .socialsButton {
+    gap: 5px;
+    font-size: var(--font-size-xs);
+    height: 50px;
+  }
+}
