@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  padding: 20px 20px 25px 20px;
+  align-items: center;
+  justify-content: center;
+  height: 73px;
+  width: 190px;
+  background-color: var(--color-secondary-grey);
+  border-radius: 20px;
+  color: var(--color-secondary-white);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+
+  &_colored {
+    border: 2px solid var(--color-primary-green);
+    color: var(--color-primary-green);
+  }
+}
