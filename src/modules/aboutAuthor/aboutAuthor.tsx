@@ -9,14 +9,17 @@ const buttonsArray = [
   {
     icon: YouTubeReactIcon(),
     buttonIconType: 'youtube',
+    subscribers: 254124,
   },
   {
     icon: TelegramReactIcon(),
     buttonIconType: 'telegram',
+    subscribers: 82421,
   },
   {
     icon: TwitterReactIcon(),
     buttonIconType: 'twitter',
+    subscribers: 99121,
   },
 ];
 
@@ -36,7 +39,7 @@ export const AboutAuthor = () => (
     <div className={styles.container__buttons}>
       {buttonsArray.map((button, index) => (
         <SocialsButton style={{ width: '47%' }} key={index} icon={button.icon} buttonIconType={button.buttonIconType}>
-          {253152}
+          {button.subscribers}
         </SocialsButton>
       ))}
     </div>
