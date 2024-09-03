@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+
+  &__titleHighlited {
+    display: inline-block;
+    background-color: var(--color-primary-green);
+    padding: 4px;
+    font-size: 24px;
+    color: var(--color-secondary-black);
+    font-weight: var(--font-weight-bold);
+    border: none;
+    align-self: flex-start;
+    margin-left: 30px;
+  }
+
+  &__title {
+    color: var(--color-primary-white);
+    font-size: 24px;
+    line-height: 25px;
+    margin-top: -40px;
+    align-self: flex-start;
+    font-weight: var(--font-weight-bold);
+    margin-left: 34px;
+  }
+};
