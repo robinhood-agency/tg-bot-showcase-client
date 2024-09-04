@@ -7,6 +7,7 @@ import { YouTubeReactIcon } from '@common/icons/YouTubeReactIcon';
 import { TelegramReactIcon } from '@common/icons/TelegramReactIcon';
 import { InstagramReactIcon } from '@common/icons/InstagramReactIcon';
 import { TwitterReactIcon } from '@common/icons/TwitterReactIcon';
+
 import { CustomButton } from '@common/components/CustomButton/CustomButton';
 
 import styles from './CustomSideBar.module.scss';
