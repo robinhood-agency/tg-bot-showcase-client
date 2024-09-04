@@ -9,7 +9,7 @@ import { InstagramReactIcon } from '@common/icons/InstagramReactIcon';
 import { TwitterReactIcon } from '@common/icons/TwitterReactIcon';
 import { CustomButton } from '@common/components/CustomButton/CustomButton';
 
-import styles from './CustomSideBar.module.scss';
+import styles from './customSideBar.module.scss';
 
 const navListArray = [{ text: 'Об авторе' }, { text: 'Программа' }, { text: 'Тарифы' }];
 const iconsArray = [
