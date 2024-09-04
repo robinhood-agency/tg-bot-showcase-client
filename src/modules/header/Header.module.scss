@@ -1,0 +1,26 @@
+.container {
+  height: 90px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px 0px 70px;
+  background-color: var(--color-primary-black);
+
+  &__title {
+    color: var(--color-primary-white);
+    font-size: 35px;
+  }
+
+  &__button {
+    margin-top: 8px;
+    background: none;
+    border: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 30px 0px 30px;
+  }
+}

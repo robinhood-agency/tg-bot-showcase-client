@@ -40,7 +40,7 @@ export const CustomSideBar = ({ onClose, isOpen }: ICustomSideBarProps) => (
         <ul className={styles.customSideBar__list}>
           {navListArray.map((item, index) => (
             <li key={index}>
-              <h1 className={styles.customSideBar__itemList}>{item.text}</h1>
+              <p className={styles.customSideBar__itemList}>{item.text}</p>
             </li>
           ))}
         </ul>
