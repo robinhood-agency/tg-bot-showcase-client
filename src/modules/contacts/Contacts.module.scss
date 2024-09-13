@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  padding: 50px 20px 50px 20px;
+  border-radius: 20px;
+  background-color: var(--color-primary-green);
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    color: var(--color-primary-white);
+    font-size: 35px;
+    font-weight: var(--font-weight-bold);
+  }
+
+  &__content {
+    color: var(--color-primary-black);
+    font-size: var(--font-size-sm);
+  }
+}

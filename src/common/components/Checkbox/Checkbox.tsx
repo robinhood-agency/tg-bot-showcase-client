@@ -10,10 +10,6 @@ export const Checkbox = ({ label, ...props }: ICheckboxProps) => (
   <label className={styles.container}>
     <input type='checkbox' {...props} />
     <span className={styles.container__checkMark} />
-    {label ? (
-      <a href='#'>
-        <span className={styles.container__label}>{label}</span>
-      </a>
-    ) : null}
+    {label ? <span className={styles.container__label}>{label}</span> : null}
   </label>
 );
