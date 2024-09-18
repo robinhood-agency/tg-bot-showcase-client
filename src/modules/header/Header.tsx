@@ -10,7 +10,7 @@ export const Header = () => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <p className={styles.container__title}>Academy</p>
       <button className={styles.container__button} onClick={() => setIsSideBarOpen(!isSideBarOpen)}>
         <SideBarReactIcon />
@@ -18,6 +18,6 @@ export const Header = () => {
       <AnimatePresence>
         {isSideBarOpen && <CustomSideBar isOpen={isSideBarOpen} onClose={() => setIsSideBarOpen(false)} />}
       </AnimatePresence>
-    </div>
+    </header>
   );
 };
