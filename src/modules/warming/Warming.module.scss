@@ -26,6 +26,8 @@
   }
 
   &__card {
+    z-index: 300;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     background-color: var(--color-secondary-blue);
