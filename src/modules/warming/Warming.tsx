@@ -1,5 +1,6 @@
 import { Card } from '@modules/warming/Card';
-import { motion } from 'framer-motion'; // Импортируем Framer Motion
+import { motion } from 'framer-motion';
+
 import styles from './Warming.module.scss';
 
 const cardsArray = [
@@ -31,7 +32,6 @@ const cardsArray = [
 
 export const Warming = () => (
   <div className={styles.container}>
-    {/* Анимируем первый заголовок */}
     <motion.p
       className={styles.container__header}
       initial={{ opacity: 0, y: 150 }}
@@ -42,7 +42,6 @@ export const Warming = () => (
       Этот курс для тех,
     </motion.p>
 
-    {/* Анимируем второй заголовок */}
     <motion.p
       className={styles.container__headerHighlited}
       initial={{ opacity: 0, y: 150 }}
@@ -53,7 +52,6 @@ export const Warming = () => (
       кто хочет:
     </motion.p>
 
-    {/* Карточки */}
     {cardsArray.map((card, index) => (
       <Card key={index} index={index} card={card} />
     ))}

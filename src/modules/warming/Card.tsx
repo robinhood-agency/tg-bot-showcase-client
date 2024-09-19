@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+
 import styles from '@modules/warming/Warming.module.scss';
 
 interface ICardProps {
