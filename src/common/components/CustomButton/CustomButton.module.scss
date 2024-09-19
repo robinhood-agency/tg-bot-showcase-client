@@ -21,7 +21,7 @@
   }
 
   &_secondary {
-    background-color: var(--color-primary-white);
+    background-color: var(--color-primary-white) !important;
     color: var(--color-secondary-black);
     &:hover {
       transform: scale(1.1);
