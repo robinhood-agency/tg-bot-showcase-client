@@ -1,6 +1,6 @@
 export const Video = () => (
-  <div style={{ marginLeft: 10, marginTop: 5 }}>
-    <svg version='1.0' width={140} height={120} viewBox='0 0 512.000000 512.000000' preserveAspectRatio='xMidYMid meet'>
+  <div style={{ marginLeft: 5 }}>
+    <svg version='1.0' width={120} height={100} viewBox='0 0 512.000000 512.000000' preserveAspectRatio='xMidYMid meet'>
       <g
         transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)'
         fill='none'

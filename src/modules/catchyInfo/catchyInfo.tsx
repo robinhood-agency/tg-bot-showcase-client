@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import styles from './catchyInfo.module.scss';
 
 const infoArray = [
@@ -29,12 +31,36 @@ const infoArray = [
 
 export const CatchyInfo = () => (
   <div className={styles.container}>
-    <p className={styles.container__title}>Курс в цифрах:</p>
+    <motion.p
+      className={styles.container__title}
+      initial={{ opacity: 0, x: '100%' }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      viewport={{ once: true }}
+    >
+      Курс в цифрах:
+    </motion.p>
     <div className={styles.container__numbers}>
       {infoArray.map((item, index) => (
         <div key={index} className={styles.container__numbersItem}>
-          <p className={styles.container__itemNumber}>{ item.number.toString() }</p>
-          <p className={styles.container__itemTitle}>{ item.title }</p>
+          <motion.p
+            className={styles.container__itemNumber}
+            initial={{ opacity: 0, x: '100%' }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            {item.number.toString()}
+          </motion.p>
+          <motion.p
+            className={styles.container__itemTitle}
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            {item.title}
+          </motion.p>
         </div>
       ))}
     </div>

@@ -1,6 +1,7 @@
 import { CustomButton } from '@common/components/CustomButton/CustomButton';
 import { TariffsCard } from './components/TariffsCard/TariffsCard';
 import { CustomLi } from './components/CustomLi/CustomLi';
+import { motion } from 'framer-motion';
 
 import styles from './Tariffs.module.scss';
 
@@ -46,7 +47,15 @@ const TariffsCardArray = [
 
 export const Tariffs = () => (
   <div className={styles.container}>
-    <p className={styles.container__title}>Выберите подходящий тариф обучения</p>
+    <motion.p
+      className={styles.container__title}
+      initial={{ opacity: 0, x: '100%' }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      viewport={{ once: true }}
+    >
+      Выберите подходящий тариф обучения
+    </motion.p>
     {TariffsCardArray.map((item, index) => (
       <TariffsCard key={index} title={item.title} content={item.content} button={item.button} />
     ))}

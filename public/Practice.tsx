@@ -1,6 +1,6 @@
 export const Practice = () => (
-  <div style={{ marginLeft: 10 }}>
-    <svg version='1.0' width={140} height={140} viewBox='0 0 260.000000 280.000000' preserveAspectRatio='xMidYMid meet'>
+  <div style={{ marginLeft: 5 }}>
+    <svg version='1.0' width={120} height={112} viewBox='0 0 260.000000 280.000000' preserveAspectRatio='xMidYMid meet'>
       <g transform='translate(0.000000,280.000000) scale(0.100000,-0.100000)' fill='#6ede51' stroke='none'>
         <path
           d='M2000 2787 c-88 -25 -117 -51 -164 -150 -25 -51 -70 -159 -101 -242

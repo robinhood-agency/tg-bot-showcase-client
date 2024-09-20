@@ -3,6 +3,7 @@ import { Partners } from '../../../public/Partners';
 import { Practice } from '../../../public/Practice';
 import { Video } from '../../../public/Video';
 import { AdvantagesCard } from './comonents/AdvantagesCard/AdvantagesCard';
+import { motion } from 'framer-motion';
 
 import styles from './Advantages.module.scss';
 
@@ -33,7 +34,15 @@ const AdvantagesCardArray = [
 
 export const Advantages = () => (
   <div className={styles.container}>
-    <p className={styles.container__title}>Преимущество курса:</p>
+    <motion.p
+      className={styles.container__title}
+      initial={{ opacity: 0, y: 55 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      viewport={{ once: true }}
+    >
+      Преимущество курса:
+    </motion.p>
     {AdvantagesCardArray.map((item, index) => (
       <AdvantagesCard key={index} title={item.title} picture={item.picture} content={item.content} />
     ))}

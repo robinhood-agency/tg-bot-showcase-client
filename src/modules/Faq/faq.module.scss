@@ -2,29 +2,31 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   gap: 40px;
-  padding: 40px 0;
+
+  &__titleWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+  }
 
   &__titleHighlited {
-    display: inline-block;
     background-color: var(--color-primary-green);
     padding: 4px;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--color-secondary-black);
     font-weight: var(--font-weight-bold);
     border: none;
-    align-self: flex-start;
-    margin-left: 30px;
+    margin-left: 28px;
   }
 
   &__title {
     color: var(--color-primary-white);
-    font-size: 24px;
+    font-size: 20px;
     line-height: 25px;
     margin-top: -40px;
-    align-self: flex-start;
     font-weight: var(--font-weight-bold);
-    margin-left: 34px;
+    margin-left: 32px;
   }
 }
