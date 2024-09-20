@@ -1,8 +1,6 @@
 .container {
   width: 100%;
-  position: -webkit-sticky; // Это для сафари по логике, нужно будет посмотреть есть ли реально разница
-  position: sticky;
-  top: 0;
+  position: fixed;
   z-index: 5000;
   height: 90px;
   display: flex;
