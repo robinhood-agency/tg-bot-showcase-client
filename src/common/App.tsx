@@ -11,7 +11,7 @@ import { Tariffs } from '@modules/tariffs/Tariffs';
 import { Warming } from '@modules/warming/Warming';
 
 const App = () => (
-  <div style={{ display: 'flex', flexDirection: 'column', gap: 50, overflow: 'hidden' }}>
+  <div style={{ display: 'flex', flexDirection: 'column', gap: 50 }}>
     <Header />
     <Landing />
     <Warming />
