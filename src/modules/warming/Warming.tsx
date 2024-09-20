@@ -34,7 +34,7 @@ export const Warming = () => (
   <div className={styles.container}>
     <motion.p
       className={styles.container__header}
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
       viewport={{ once: true }}
@@ -44,7 +44,7 @@ export const Warming = () => (
 
     <motion.p
       className={styles.container__headerHighlited}
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
       viewport={{ once: true }}
