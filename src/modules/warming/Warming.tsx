@@ -1,5 +1,4 @@
 import { Card } from '@modules/warming/Card';
-
 import { motion } from 'framer-motion';
 
 import styles from './Warming.module.scss';
@@ -35,9 +34,9 @@ export const Warming = () => (
   <div className={styles.container}>
     <motion.p
       className={styles.container__header}
-      initial={{ opacity: 0, y: 150 }}
+      initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3 }}
       viewport={{ once: true }}
     >
       Этот курс для тех,
@@ -45,9 +44,9 @@ export const Warming = () => (
 
     <motion.p
       className={styles.container__headerHighlited}
-      initial={{ opacity: 0, y: 150 }}
+      initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3 }}
       viewport={{ once: true }}
     >
       кто хочет:

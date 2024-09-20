@@ -13,15 +13,7 @@
 @media (max-width: 768px) {
   .container {
     &__title {
-      font-size: var(--font-size-xl);
-    }
-  }
-}
-
-@media (max-width: 468px) {
-  .container {
-    &__title {
-      font-size: var(--font-size-md);
+      font-size: 40px;
     }
   }
 }

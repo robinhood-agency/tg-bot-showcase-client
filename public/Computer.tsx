@@ -1,5 +1,5 @@
 export const Computer = () => (
-  <svg version='1.0' width={150} height={150} viewBox='0 0 200.000000 200.000000' preserveAspectRatio='xMidYMid meet'>
+  <svg version='1.0' width={130} height={130} viewBox='0 0 200.000000 200.000000' preserveAspectRatio='xMidYMid meet'>
     <g
       transform='translate(0.000000,200.000000) scale(0.100000,-0.100000)'
       fill='none'
