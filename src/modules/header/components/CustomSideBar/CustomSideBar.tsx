@@ -12,7 +12,11 @@ import { CustomButton } from '@common/components/CustomButton/CustomButton';
 
 import styles from './customSideBar.module.scss';
 
-const navListArray = [{ text: 'Об авторе' }, { text: 'Программа' }, { text: 'Тарифы' }];
+const navListArray = [
+  { text: 'Об авторе', id: '#author' },
+  { text: 'Вопросы', id: '#questions' },
+  { text: 'Тарифы', id: '#tariffs' },
+];
 const iconsArray = [
   { icon: <YouTubeReactIcon />, Link: 'https://www.youtube.com/' },
   { icon: <TelegramReactIcon />, Link: 'https://desktop.telegram.org/' },
@@ -22,7 +26,7 @@ const iconsArray = [
 
 interface ICustomSideBarProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isOpen: boolean;
-  onClose: React.MouseEventHandler<HTMLButtonElement>;
+  onClose: React.MouseEventHandler<HTMLButtonElement | HTMLLIElement>;
 }
 
 export const CustomSideBar = ({ onClose, isOpen }: ICustomSideBarProps) => (
@@ -41,8 +45,8 @@ export const CustomSideBar = ({ onClose, isOpen }: ICustomSideBarProps) => (
         <nav>
           <ul className={styles.customSideBar__list}>
             {navListArray.map((item, index) => (
-              <li key={index}>
-                <p className={styles.customSideBar__itemList}>{item.text}</p>
+              <li key={index} onClick={onClose}>
+                <a className={styles.customSideBar__itemList} href={`${item.id}`}>{item.text}</a>
               </li>
             ))}
           </ul>
@@ -57,12 +61,12 @@ export const CustomSideBar = ({ onClose, isOpen }: ICustomSideBarProps) => (
           </div>
           <div className={styles.customSideBar__buttonWrapper}>
             <div className={styles.customSideBar__secondaryButton}>
-              <CustomButton buttonType='secondary' height={51}>
-                Записаться
+              <CustomButton buttonType='secondary' height={51} onClick={onClose}>
+                <a href='#form'>Записаться</a>
               </CustomButton>
             </div>
-            <CustomButton buttonType='fourth' height={51}>
-              У меня есть вопрос
+            <CustomButton buttonType='fourth' height={51} onClick={onClose}>
+              <a href='#questions'>У меня есть вопрос</a>
             </CustomButton>
           </div>
         </div>
