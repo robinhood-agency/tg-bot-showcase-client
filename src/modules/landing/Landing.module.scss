@@ -15,6 +15,11 @@
     font-weight: var(--font-weight-bold);
     font-size: 32px;
     color: var(--color-primary-white);
+    align-self: flex-start;
+
+    @media (max-width: 360px) {
+      font-size: 24px;
+    }
   }
 
   &__highlitedText {

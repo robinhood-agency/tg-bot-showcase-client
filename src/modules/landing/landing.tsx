@@ -5,18 +5,18 @@ import styles from './Landing.module.scss';
 
 export const Landing = () => (
   <div className={styles.container}>
-    <p className={styles.container__catchyText}>
-      От криптохомячка
+    <div className={styles.container__catchyText}>
+      <p>От криптохомячка</p>
       <p className={styles.container__highlitedText}>до владыки мира</p>
-    </p>
+    </div>
     <p className={styles.container__courseInfo}>
       Курс от самого гениального крипто гения, который только мог появиться на свет, покупайте!
     </p>
     <Crabs />
-    <p className={styles.container__courseDetails}>
-      Старт курса: СКОРО
+    <div className={styles.container__courseDetails}>
+      <p>Старт курса: СКОРО</p>
       <p> Продолжительность: 3 месяца </p>
-    </p>
+    </div>
     <div className={styles.container__buttonContainer}>
       <CustomButton buttonType='third' height={55} >
         Стать участником
