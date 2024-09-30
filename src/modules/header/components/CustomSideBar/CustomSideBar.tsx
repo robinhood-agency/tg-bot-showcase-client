@@ -1,4 +1,5 @@
-import { ButtonHTMLAttributes } from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
+import { Link } from 'react-scroll';
 
 import { CloseReactIcon } from '@common/icons/CloseReactIcon';
 import { motion } from 'framer-motion';
@@ -7,15 +8,14 @@ import { YouTubeReactIcon } from '@common/icons/YouTubeReactIcon';
 import { TelegramReactIcon } from '@common/icons/TelegramReactIcon';
 import { InstagramReactIcon } from '@common/icons/InstagramReactIcon';
 import { TwitterReactIcon } from '@common/icons/TwitterReactIcon';
-
 import { CustomButton } from '@common/components/CustomButton/CustomButton';
 
 import styles from './customSideBar.module.scss';
 
 const navListArray = [
-  { text: 'Об авторе', id: '#author' },
-  { text: 'Вопросы', id: '#questions' },
-  { text: 'Тарифы', id: '#tariffs' },
+  { text: 'Об авторе', id: 'author' },
+  { text: 'Вопросы', id: 'questions' },
+  { text: 'Тарифы', id: 'tariffs' },
 ];
 const iconsArray = [
   { icon: <YouTubeReactIcon />, Link: 'https://www.youtube.com/' },
@@ -45,8 +45,17 @@ export const CustomSideBar = ({ onClose, isOpen }: ICustomSideBarProps) => (
         <nav>
           <ul className={styles.customSideBar__list}>
             {navListArray.map((item, index) => (
-              <li key={index} onClick={onClose}>
-                <a className={styles.customSideBar__itemList} href={`${item.id}`}>{item.text}</a>
+              <li key={index}>
+                <Link
+                  to={item.id}
+                  smooth={true}
+                  offset={-90}
+                  duration={500}
+                  className={styles.customSideBar__itemList}
+                  onClickCapture={onClose}
+                >
+                  {item.text}
+                </Link>
               </li>
             ))}
           </ul>
@@ -61,12 +70,30 @@ export const CustomSideBar = ({ onClose, isOpen }: ICustomSideBarProps) => (
           </div>
           <div className={styles.customSideBar__buttonWrapper}>
             <div className={styles.customSideBar__secondaryButton}>
-              <CustomButton buttonType='secondary' height={51} onClick={onClose}>
-                <a href='#form'>Записаться</a>
+              <CustomButton buttonType='secondary' height={51}>
+                <Link
+                  to='form'
+                  smooth={true}
+                  offset={-90}
+                  duration={500}
+                  className={styles.customSideBar__link}
+                  onClickCapture={onClose}
+                >
+                  Записаться
+                </Link>
               </CustomButton>
             </div>
-            <CustomButton buttonType='fourth' height={51} onClick={onClose}>
-              <a href='#questions'>У меня есть вопрос</a>
+            <CustomButton buttonType='fourth' height={51}>
+              <Link
+                to='questions'
+                smooth={true}
+                offset={-90}
+                duration={500}
+                className={styles.customSideBar__link}
+                onClickCapture={onClose}
+              >
+                У меня есть вопрос
+              </Link>
             </CustomButton>
           </div>
         </div>

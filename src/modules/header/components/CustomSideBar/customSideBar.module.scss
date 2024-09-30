@@ -46,6 +46,12 @@
     gap: 15px;
   }
 
+  &__link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
   &__itemList {
     font-size: var(--font-size-xl);
     color: var(--color-primary-white);

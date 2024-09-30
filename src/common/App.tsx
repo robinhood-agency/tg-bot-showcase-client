@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { Element } from 'react-scroll';
+
 import { AboutAuthor } from '@modules/aboutAuthor/aboutAuthor';
 import { Advantages } from '@modules/advantages/Advantages';
 import { CatchyInfo } from '@modules/catchyInfo/catchyInfo';
@@ -11,60 +12,30 @@ import { Landing } from '@modules/landing/landing';
 import { Tariffs } from '@modules/tariffs/Tariffs';
 import { Warming } from '@modules/warming/Warming';
 
-const App = () => {
-    useEffect(() => {
-        const handleHashChange = () => {
-            const hash = window.location.hash;
-            if (hash) {
-                const element = document.querySelector(hash);
-                const headerHeight = document.querySelector('header')?.offsetHeight || 0;
-
-                if (element) {
-                    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-                    const offsetPosition = elementPosition - headerHeight;
-
-                    window.scrollTo({
-                          top: offsetPosition,
-                          behavior: 'smooth',
-                    });
-                }
-            }
-        };
-
-        handleHashChange();
-
-        window.addEventListener('hashchange', handleHashChange);
-
-        return () => {
-            window.removeEventListener('hashchange', handleHashChange);
-        };
-    }, []);
-
-    return (
+const App = () => (
       <div style={{ display: 'flex', flexDirection: 'column', gap: 50, overflow: 'hidden' }}>
-          <div id='header'>
+          <div>
               <Header />
           </div>
           <Landing />
           <Warming />
-          <div id='author'>
+          <Element name='author'>
               <AboutAuthor />
-          </div>
+          </Element>
           <Advantages />
           <KnowledgeAndSkills />
-          <div id='tariffs'>
+          <Element name='tariffs'>
               <Tariffs />
-          </div>
+          </Element>
           <CatchyInfo />
-          <div id='questions'>
+          <Element name='questions'>
               <Faq />
-          </div>
-          <div id='form'>
+          </Element>
+          <Element name='form'>
               <Contacts />
-          </div>
+          </Element>
           <Footer />
       </div>
-    );
-};
+);
 
 export default App;
