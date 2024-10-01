@@ -43,7 +43,7 @@ export const AboutAuthor = () => (
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.1 }}
         viewport={{ once: true }}
-        src='../../../public/Mr._Krabs.png'
+        src='/Mr._Krabs.png'
         alt='mrCrabs_image'
       />
       <p className={styles.container__authorCardName}>Mr. Crabs</p>
