@@ -6,27 +6,24 @@ import { motion } from 'framer-motion';
 import styles from './Tariffs.module.scss';
 
 const TariffsListPrimaryArray = [
-  { content: '6 модулей программы обучения' },
-  { content: 'Конспекты к урокам' },
-  { content: 'Домашние задания' },
-  { content: 'Доступ в закрытый телеграм-канал обучения' },
-  { content: 'Ежедневная обратная связь от куратора в период обучения' },
-  { content: 'Еженедельные Вебинары с куратором в период обучения' },
-  { content: 'Еженедельные Вебинары с куратором в период обучения' },
-  { content: 'Доступ к материалам курса 3 месяца с момента старта обучения' },
+  { content: '5 модулей программы обучения в видео формате' },
+  { content: 'Домашние задания к каждому уроку' },
+  { content: 'Доступ к закрытому телеграм каналу' },
+  { content: 'Обратная связь 24/7 от куратора' },
+  { content: 'Доступ к материалам курса 6 месяцев с начала обучения' },
 ];
 
 const TariffsListSecondaryArray = [
-  { content: 'Закрытый чат с Рафаэлем' },
-  { content: 'Ежедневная обратная связь от команды SATOSHI FRIENDS в чате Telegram в период обучения' },
-  { content: 'Еженедельные Вебинары с Рафаэлем по самым острым вопросам в период обучения (не менее 1 часа)' },
-  { content: 'Доступ к материалам курса 6 месяцев с момента старта обучения' },
-  { content: 'Ежедневная обратная связь от куратора в период обучения' },
+  { content: '7 модулей программы обучения' },
+  { content: 'Закрытый чат с самим мистером Крабсом' },
+  { content: 'Обратная связь от сотрудников команды Crabs Academy 24/7' },
+  { content: 'Еженедельные вебинары с мистером Крабсом весь период обучения' },
+  { content: 'Доступ к материалам курса навсегда' },
 ];
 
 const TariffsCardArray = [
   {
-    title: 'Сатоши',
+    title: 'Crab junior',
     content: TariffsListPrimaryArray.map((item, index) => <CustomLi key={index} content={item.content} />),
     button: (
       <CustomButton height={55} buttonType='secondary'>
@@ -35,7 +32,7 @@ const TariffsCardArray = [
     ),
   },
   {
-    title: 'Манипулятор',
+    title: 'Krusty Krabs owner',
     content: TariffsListSecondaryArray.map((item, index) => <CustomLi key={index} content={item.content} />),
     button: (
       <CustomButton height={55} buttonType='secondary'>

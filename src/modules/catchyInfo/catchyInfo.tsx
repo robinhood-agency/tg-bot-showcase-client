@@ -16,7 +16,7 @@ const infoArray = [
     title: 'Учебных модулей',
   },
   {
-    number: 45,
+    number: 10,
     title: 'Приглашенных экспертов',
   },
   {

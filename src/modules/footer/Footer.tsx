@@ -15,7 +15,7 @@ const customIconButtonArray = [
 
 export const Footer = () => (
   <footer className={styles.container}>
-    <p className={styles.container__title}>Academy</p>
+    <p className={styles.container__title}>Krabs Academy</p>
     <div className={styles.container__socials}>
       {customIconButtonArray.map((item, index) => (
         <a key={index} href={item.url}>

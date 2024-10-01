@@ -7,11 +7,11 @@ import styles from './HorizontalMotion.module.scss';
 const motionBlockArray = [
   { title: 'Bitcoin' },
   { title: 'Ethereum', colored: true },
-  { title: 'Ripple' },
+  { title: 'Toncoin' },
   { title: 'Litecoin' },
   { title: 'Cardano', colored: true },
   { title: 'Polkadot' },
-  { title: 'Chainlink' },
+  { title: 'Notcoin' },
   { title: 'Stellar' },
   { title: 'Dogecoin', colored: true },
   { title: 'Solana' },
