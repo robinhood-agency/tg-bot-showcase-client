@@ -1,3 +1,5 @@
+import { Element } from 'react-scroll';
+
 import { AboutAuthor } from '@modules/aboutAuthor/aboutAuthor';
 import { Advantages } from '@modules/advantages/Advantages';
 import { CatchyInfo } from '@modules/catchyInfo/catchyInfo';
@@ -11,19 +13,29 @@ import { Tariffs } from '@modules/tariffs/Tariffs';
 import { Warming } from '@modules/warming/Warming';
 
 const App = () => (
-  <div style={{ display: 'flex', flexDirection: 'column', gap: 50, overflow: 'hidden' }}>
-    <Header />
-    <Landing />
-    <Warming />
-    <AboutAuthor />
-    <Advantages />
-    <KnowledgeAndSkills />
-    <Tariffs />
-    <CatchyInfo />
-    <Faq />
-    <Contacts />
-    <Footer />
-  </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 50, overflow: 'hidden' }}>
+          <div>
+              <Header />
+          </div>
+          <Landing />
+          <Warming />
+          <Element name='author'>
+              <AboutAuthor />
+          </Element>
+          <Advantages />
+          <KnowledgeAndSkills />
+          <Element name='tariffs'>
+              <Tariffs />
+          </Element>
+          <CatchyInfo />
+          <Element name='questions'>
+              <Faq />
+          </Element>
+          <Element name='form'>
+              <Contacts />
+          </Element>
+          <Footer />
+      </div>
 );
 
 export default App;

@@ -16,7 +16,12 @@ export const Header = () => {
         <SideBarReactIcon />
       </button>
       <AnimatePresence>
-        {isSideBarOpen && <CustomSideBar isOpen={isSideBarOpen} onClose={() => setIsSideBarOpen(false)} />}
+        {isSideBarOpen &&
+          <CustomSideBar
+            isOpen={isSideBarOpen}
+            onClose={() => setIsSideBarOpen(false)}
+          />
+        }
       </AnimatePresence>
     </header>
   );

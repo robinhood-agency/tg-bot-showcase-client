@@ -1,4 +1,5 @@
-import { ButtonHTMLAttributes } from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
+import { Link } from 'react-scroll';
 
 import { CloseReactIcon } from '@common/icons/CloseReactIcon';
 import { motion } from 'framer-motion';
@@ -7,12 +8,15 @@ import { YouTubeReactIcon } from '@common/icons/YouTubeReactIcon';
 import { TelegramReactIcon } from '@common/icons/TelegramReactIcon';
 import { InstagramReactIcon } from '@common/icons/InstagramReactIcon';
 import { TwitterReactIcon } from '@common/icons/TwitterReactIcon';
-
 import { CustomButton } from '@common/components/CustomButton/CustomButton';
 
 import styles from './customSideBar.module.scss';
 
-const navListArray = [{ text: 'Об авторе' }, { text: 'Программа' }, { text: 'Тарифы' }];
+const navListArray = [
+  { text: 'Об авторе', id: 'author' },
+  { text: 'Вопросы', id: 'questions' },
+  { text: 'Тарифы', id: 'tariffs' },
+];
 const iconsArray = [
   { icon: <YouTubeReactIcon />, Link: 'https://www.youtube.com/' },
   { icon: <TelegramReactIcon />, Link: 'https://desktop.telegram.org/' },
@@ -22,7 +26,7 @@ const iconsArray = [
 
 interface ICustomSideBarProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isOpen: boolean;
-  onClose: React.MouseEventHandler<HTMLButtonElement>;
+  onClose: React.MouseEventHandler<HTMLButtonElement | HTMLLIElement>;
 }
 
 export const CustomSideBar = ({ onClose, isOpen }: ICustomSideBarProps) => (
@@ -42,7 +46,16 @@ export const CustomSideBar = ({ onClose, isOpen }: ICustomSideBarProps) => (
           <ul className={styles.customSideBar__list}>
             {navListArray.map((item, index) => (
               <li key={index}>
-                <p className={styles.customSideBar__itemList}>{item.text}</p>
+                <Link
+                  to={item.id}
+                  smooth={true}
+                  offset={-90}
+                  duration={500}
+                  className={styles.customSideBar__itemList}
+                  onClickCapture={onClose}
+                >
+                  {item.text}
+                </Link>
               </li>
             ))}
           </ul>
@@ -58,11 +71,29 @@ export const CustomSideBar = ({ onClose, isOpen }: ICustomSideBarProps) => (
           <div className={styles.customSideBar__buttonWrapper}>
             <div className={styles.customSideBar__secondaryButton}>
               <CustomButton buttonType='secondary' height={51}>
-                Записаться
+                <Link
+                  to='form'
+                  smooth={true}
+                  offset={-90}
+                  duration={500}
+                  className={styles.customSideBar__link}
+                  onClickCapture={onClose}
+                >
+                  Записаться
+                </Link>
               </CustomButton>
             </div>
             <CustomButton buttonType='fourth' height={51}>
-              У меня есть вопрос
+              <Link
+                to='questions'
+                smooth={true}
+                offset={-90}
+                duration={500}
+                className={styles.customSideBar__link}
+                onClickCapture={onClose}
+              >
+                У меня есть вопрос
+              </Link>
             </CustomButton>
           </div>
         </div>
