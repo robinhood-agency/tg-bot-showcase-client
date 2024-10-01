@@ -43,7 +43,7 @@ export const AboutAuthor = () => (
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.1 }}
         viewport={{ once: true }}
-        src='../../../public/Mr._Krabs.png'
+        src='/Mr._Krabs.png'
         alt='mrCrabs_image'
       />
       <p className={styles.container__authorCardName}>Mr. Crabs</p>
@@ -56,8 +56,8 @@ export const AboutAuthor = () => (
       transition={{ duration: 0.5, delay: 0.1 }}
       viewport={{ once: true }}
     >
-      За последние 5 лет был накоплен опыт не только в области инвестиций, подкрепленный публичным результатом, но и
-      навыки в образовательной деятельности, так необходимые для усвоения материала слушателем.
+      За последние 5 лет был получен бесценный опыт как в области инвестиций в
+      тяжелом мире криптовалюты, так и в образовательной деятельности, выпустив огромное количество успешных потоков учеников.
     </motion.p>
     <div className={styles.container__buttons}>
       {buttonsArray.map((button, index) => (

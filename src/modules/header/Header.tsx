@@ -11,7 +11,7 @@ export const Header = () => {
 
   return (
     <header className={styles.container}>
-      <p className={styles.container__title}>Academy</p>
+      <p className={styles.container__title}>Krabs Academy</p>
       <button className={styles.container__button} onClick={() => setIsSideBarOpen(!isSideBarOpen)}>
         <SideBarReactIcon />
       </button>
