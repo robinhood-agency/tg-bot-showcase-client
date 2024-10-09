@@ -50,11 +50,6 @@
     font-weight: var(--font-weight-bold);
     color: var(--color-secondary-black);
   }
-
-  &:hover {
-    cursor: pointer;
-    border: 2px solid var(--color-primary-black);
-  }
 }
 
 @media (max-width: 385px) {

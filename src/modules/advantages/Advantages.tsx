@@ -45,7 +45,7 @@ export const Advantages = () => (
       transition={{ duration: 0.5, delay: 0.1 }}
       viewport={{ once: true }}
     >
-      Преимущество курса:
+      Преимущества курса:
     </motion.p>
     {AdvantagesCardArray.map((item, index) => (
       <AdvantagesCard key={index} title={item.title} picture={item.picture} content={item.content} />
