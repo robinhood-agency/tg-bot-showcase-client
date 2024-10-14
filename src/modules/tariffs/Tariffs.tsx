@@ -51,7 +51,7 @@ export const Tariffs = () => (
       transition={{ duration: 0.5, delay: 0.1 }}
       viewport={{ once: true }}
     >
-      Выберите подходящий тариф обучения
+      Выберите подходящий тариф обучения:
     </motion.p>
     {TariffsCardArray.map((item, index) => (
       <TariffsCard key={index} title={item.title} content={item.content} button={item.button} />

@@ -7,7 +7,7 @@
   align-items: center;
   width: 100%;
   padding: 30px 40px;
-  background-color: var(--color-secondary-black);
+  background-color: #0b0c10;
   letter-spacing: 0.5px;
   gap: 8px;
 
@@ -25,7 +25,7 @@
   &__highlitedText {
     background-color: var(--color-primary-green);
     color: var(--color-secondary-black);
-    padding: 3px;
+    padding: 10px;
     display: inline-block;
     margin-top: 8px;
     border: none;
@@ -33,7 +33,7 @@
 
   &__courseInfo {
     width: 70%;
-    color: var(--color-primary-grey);
+    color: var(--color-primary-white);
     align-self: flex-start;
     font-size: 14px;
   }
@@ -44,7 +44,7 @@
   }
 
   &__courseDetails {
-    color: var(--color-primary-green);
+    color: var(--color-primary-white);
     align-self: flex-start;
     font-weight: var(--font-weight-bold);
     font-size: 16px;

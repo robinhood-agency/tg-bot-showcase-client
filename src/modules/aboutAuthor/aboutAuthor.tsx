@@ -34,7 +34,7 @@ export const AboutAuthor = () => (
       viewport={{ once: true }}
     >
       <p className={styles.container__title}>Об авторе</p>
-      <p className={styles.container__titleHighlited}>Курса и академии</p>
+      <p className={styles.container__titleHighlited}>курса и академии</p>
     </motion.div>
     <motion.div className={styles.container__authorCard}>
       <motion.img
@@ -46,7 +46,7 @@ export const AboutAuthor = () => (
         src='/Mr._Krabs.png'
         alt='mrCrabs_image'
       />
-      <p className={styles.container__authorCardName}>Mr. Crabs</p>
+      <p className={styles.container__authorCardName}>Mr. Krabs</p>
       <p className={styles.container__authorCardContent}>Автор курса</p>
     </motion.div>
     <motion.p
@@ -56,8 +56,8 @@ export const AboutAuthor = () => (
       transition={{ duration: 0.5, delay: 0.1 }}
       viewport={{ once: true }}
     >
-      За последние 5 лет был получен бесценный опыт как в области инвестиций в
-      тяжелом мире криптовалюты, так и в образовательной деятельности, выпустив огромное количество успешных потоков учеников.
+      За последние 5 лет был получен бесценный опыт как в области инвестиций в тяжелом мире криптовалюты, так и в
+      образовательной деятельности, выпустив огромное количество успешных потоков учеников.
     </motion.p>
     <div className={styles.container__buttons}>
       {buttonsArray.map((button, index) => (

@@ -18,7 +18,7 @@ export const Landing = () => (
       <p> Продолжительность: 3 месяца </p>
     </div>
     <div className={styles.container__buttonContainer}>
-      <CustomButton buttonType='third' height={55} >
+      <CustomButton buttonType='third' height={55}>
         Стать участником
       </CustomButton>
     </div>

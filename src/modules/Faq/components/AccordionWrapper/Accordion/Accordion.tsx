@@ -20,7 +20,7 @@ export const Accordion = ({ title, content, isActive, ...props }: IAccordionProp
         animate={{ rotate: isActive ? -45 : 0 }}
         transition={{ duration: 0.4, ease: 'easeInOut' }}
       >
-        <PlusReactIcon color={isActive ? 'black' : '#6ede51'} size={33} />
+        <PlusReactIcon color={isActive ? 'black' : '#37FBEE'} size={33} />
       </motion.div>
     </div>
     <AnimatePresence>
