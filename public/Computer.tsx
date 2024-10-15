@@ -3,7 +3,7 @@ export const Computer = () => (
     <g
       transform='translate(0.000000,200.000000) scale(0.100000,-0.100000)'
       fill='none'
-      stroke='#6ede51'
+      stroke='#37FBEE'
       strokeWidth={15}
     >
       <path

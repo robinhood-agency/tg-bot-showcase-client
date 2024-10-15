@@ -22,7 +22,7 @@ export const AdvantagesCard = ({ picture, title, content }: IAdvantagesCard) => 
     </motion.div>
     <motion.div
       className={styles.container__textWrapper}
-      initial={{ opacity: 0, x: '100%' }}
+      initial={{ opacity: 0, x: '90%' }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0.1 }}
       viewport={{ once: true }}

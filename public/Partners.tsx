@@ -1,7 +1,7 @@
 export const Partners = () => (
   <div style={{ marginLeft: 5 }}>
     <svg version='1.0' width={120} height={120} viewBox='0 0 512.000000 512.000000' preserveAspectRatio='xMidYMid meet'>
-      <g transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)' fill='#6ede51' stroke='none'>
+      <g transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)' fill='#37FBEE' stroke='none'>
         <path
           d='M215 3988 c-47 -27 -59 -79 -27 -117 10 -14 162 -83 397 -182 209
 -88 381 -161 382 -163 3 -3 -456 -1318 -462 -1324 -2 -2 -59 14 -127 37 -68

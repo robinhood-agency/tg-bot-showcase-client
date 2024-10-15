@@ -23,7 +23,7 @@
 
   &_secondary {
     background-color: var(--color-primary-white) !important;
-    color: var(--color-secondary-black);
+    color: #0b0c10;
     &:hover {
       transform: scale(1.1);
       border: 1px solid var(--color-secondary-black);
@@ -32,20 +32,19 @@
 
   &_third {
     background-color: var(--color-primary-green);
-    color: var(--color-primary-white);
+    color: #0b0c10;
     &:hover {
       transform: scale(1.1);
-      background-color: var(--color-secondary-green);
       color: var(--color-primary-black);
     }
   }
 
   &_fourth {
-    background-color: var(--color-primary-grey);
-    color: var(--color-primary-white);
+    padding: 20px 20px;
+    background-color: var(--color-primary-green);
+    color: #0b0c10;
     &:hover {
       transform: scale(1.1);
-      background-color: var(--color-primary-white);
       color: var(--color-secondary-black);
     }
   }
