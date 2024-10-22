@@ -6,14 +6,6 @@
 
   &__title {
     color: var(--color-primary-white);
-    font-size: 55px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    &__title {
-      font-size: 40px;
-    }
+    font-size: 32px;
   }
 }

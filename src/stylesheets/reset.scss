@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('src/stylesheets/fonts/Montserrat-Regular.ttf') format('wwof2');
+}
+
 *,
 *:before,
 *:after {
@@ -77,6 +82,7 @@ main {
 body {
   line-height: 1;
   background-color: #0b0c10;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ol,

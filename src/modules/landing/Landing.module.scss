@@ -13,13 +13,9 @@
 
   &__catchyText {
     font-weight: var(--font-weight-bold);
-    font-size: 26px;
+    font-size: 32px;
     color: var(--color-primary-white);
     align-self: flex-start;
-
-    @media (max-width: 360px) {
-      font-size: 24px;
-    }
   }
 
   &__highlitedText {
@@ -35,7 +31,7 @@
     width: 70%;
     color: var(--color-primary-white);
     align-self: flex-start;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   &__image {
@@ -47,7 +43,7 @@
     color: var(--color-primary-white);
     align-self: flex-start;
     font-weight: var(--font-weight-bold);
-    font-size: 16px;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -57,5 +53,13 @@
     width: 65%;
     align-self: flex-start;
     margin-top: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    &__catchyText {
+      font-size: 24px;
+    }
   }
 }

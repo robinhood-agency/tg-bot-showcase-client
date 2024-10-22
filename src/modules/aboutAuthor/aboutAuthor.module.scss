@@ -19,14 +19,14 @@
   &__title {
     align-self: start;
     color: var(--color-primary-black);
-    font-size: 25px;
+    font-size: 32px;
     font-weight: var(--font-weight-bold);
   }
 
   &__titleHighlited {
     align-self: start;
     color: var(--color-primary-black);
-    font-size: 25px;
+    font-size: 32px;
     padding: 5px 5px 5px 5px;
     background-color: var(--color-primary-green);
     margin-top: -25px;
@@ -54,20 +54,20 @@
   }
 
   &__authorCardName {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--color-primary-black);
     font-weight: var(--font-weight-bold);
   }
 
   &__authorCardContent {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--color-primary-grey);
     font-weight: var(--font-weight-bold);
   }
 
   &__mainContent {
     align-self: start;
-    font-size: 16px;
+    font-size: 12px;
     color: var(--color-primary-black);
     line-height: 20px;
   }

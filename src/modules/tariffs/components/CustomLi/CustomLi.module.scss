@@ -1,8 +1,7 @@
 .container {
   display: flex;
-  font-size: var(--font-size-sm);
+  font-size: 12px;
   color: var(--color-primary-white);
-  line-height: 16px;
   gap: 5px;
 
   &__square {

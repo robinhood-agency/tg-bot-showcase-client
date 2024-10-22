@@ -38,7 +38,7 @@ export const AccordionWrapper = () => {
   };
 
   return (
-    <div style={{ paddingLeft: 20, paddingRight: 20, width: '100%' }} ref={containerRef}>
+    <div style={{ width: '100%' }} ref={containerRef}>
       {accordionData.map(({ title, content }, index) => (
         <Accordion
           key={index}

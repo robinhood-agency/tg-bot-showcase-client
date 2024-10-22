@@ -2,6 +2,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  padding: 0 40px;
   justify-content: flex-start;
   gap: 40px;
 
@@ -15,19 +16,27 @@
   &__titleHighlited {
     background-color: var(--color-primary-green);
     padding: 4px;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--color-secondary-black);
     font-weight: var(--font-weight-bold);
     border: none;
-    margin-left: 28px;
   }
 
   &__title {
     color: var(--color-primary-white);
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 20px;
     margin-top: -40px;
     font-weight: var(--font-weight-bold);
-    margin-left: 32px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    &__title {
+      font-size: 20px;
+    }
+    &__titleHighlited {
+      font-size: 20px;
+    }
   }
 }
