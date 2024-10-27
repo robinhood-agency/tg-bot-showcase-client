@@ -14,7 +14,7 @@ export const TariffsCard = ({ title, content, button }: TariffsCard) => (
   <div className={styles.container}>
     <motion.p
       className={styles.container__title}
-      initial={{ opacity: 0, y: -40 }}
+      initial={{ opacity: 0, y: -60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.1 }}
       viewport={{ once: true }}
