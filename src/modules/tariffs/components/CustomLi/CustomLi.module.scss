@@ -1,11 +1,12 @@
 .container {
   display: flex;
   font-size: 12px;
+  line-height: 16px;
   color: var(--color-primary-white);
   gap: 5px;
 
   &__square {
-    margin-top: 5px;
+    margin-top: 4.5px;
     width: 6px;
     height: 6px;
     flex-shrink: 0;

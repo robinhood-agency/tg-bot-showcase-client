@@ -9,26 +9,21 @@
 
   &__title {
     color: var(--color-primary-white);
-    font-size: 35px;
+    font-size: 32px;
     line-height: 49px;
     font-weight: var(--font-weight-bold);
   }
 
   &__numbers {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 
   &__numbersItem {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    flex-basis: 40%;
     gap: 5px;
   }
 
@@ -42,7 +37,7 @@
   &__itemTitle {
     color: var(--color-primary-white);
     font-size: 12px;
+    text-align: center;
     line-height: 19px;
-    text-wrap: nowrap;
   }
 }
